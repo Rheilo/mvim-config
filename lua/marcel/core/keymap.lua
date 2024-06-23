@@ -19,8 +19,22 @@ vim.g.maplocalleader = " "
 --   term_mode = "t",
 --   command_mode = "c",
 
+
+-- -------------
+-- NORMAL - MODE
+-- -------------
+keymap("n", "<leader>e", ":Lexplore 20<cr>", opts)
+-- Navigate buffers
+keymap("n", "<S-h>", ":bprevious<CR>", opts)
+keymap("n", "<S-l>", ":bnext<CR>", opts)
+-- Move text up and down
+keymap("n", "<A-j>", ":m .+1<CR>==", opts)
+keymap("n", "<A-k>", ":m .-2<CR>==", opts)
 -- -------------
 -- INSERT - MODE
 -- -------------
 keymap("i", "jk", "<ESC>", opts)
 keymap("i", "kj", "<ESC>", opts)
+-- -------------
+-- VISUAL - MODE
+-- -------------
