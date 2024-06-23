@@ -10,6 +10,9 @@ local options = {
 	tabstop					= 2,									-- Gibt an wie viele <space> ein <tab> sind
 	expandtab				= true,								-- Konvertiert <tab> zu <space>
   smartcase       = true,               -- Ignoriert Groß- & Kleinschreibung in der Suche
+  wrap            = false,              -- Erzwinge einen Zeilenumbruch bei langen Zeilen
+  showtabline     = 2                   -- Zeige Tabs
+  cmdline         = 2                   -- Kommandozeile erweitern
 }
 
 for key, value in pairs(options) do
