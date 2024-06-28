@@ -12,5 +12,4 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("marcel.plugins")
-require("lazy").setup("marcel.plugins.themes")
 

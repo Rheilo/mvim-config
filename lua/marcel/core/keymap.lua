@@ -41,8 +41,6 @@ keymap("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" } )
 keymap("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" } ) 
 keymap("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open curren buffer in new tab" } )
 
--- Explorer Öffnen
-keymap("n", "<leader>e", ":Lexplore 20<cr>", opts)
 -- Navigate buffers
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
