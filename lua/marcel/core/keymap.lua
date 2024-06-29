@@ -40,10 +40,11 @@ keymap("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" } )
 keymap("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" } )
 keymap("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" } ) 
 keymap("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open curren buffer in new tab" } )
-
+keymap("n", "<S-l>", "<cmd>tabn<CR>", { desc = "Go to next tab" } )
+keymap("n", "<S-h>", "<cmd>tabp<CR>", { desc = "Go to previous tab" } )
 -- Navigate buffers
-keymap("n", "<S-h>", ":bprevious<CR>", opts)
-keymap("n", "<S-l>", ":bnext<CR>", opts)
+keymap("n", "<A-h>", "<cmd>bprevious<CR>", opts)
+keymap("n", "<A-l>", "<cmd>bnext<CR>", opts)
 -- Move text up and down
 keymap("n", "<A-j>", ":m .+1<CR>==", opts)
 keymap("n", "<A-k>", ":m .-2<CR>==", opts)
