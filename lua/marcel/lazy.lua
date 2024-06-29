@@ -12,7 +12,10 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup(
-  "marcel.plugins",
+  {
+    { import = "marcel.plugins" },
+    { import = "marcel.plugins.lsp" },
+  },
   {
     checker = {
       enabled = true,
