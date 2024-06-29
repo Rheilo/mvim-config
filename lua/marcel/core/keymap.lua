@@ -55,9 +55,9 @@ keymap("n", "<C-o>", "<C-o>", opts)
 -- -------------
 keymap("i", "jk", "<ESC>", opts)
 keymap("i", "kj", "<ESC>", opts)
-keymap("i", "<A-7>", "{", opts)
+keymap("i", "<A-7>", "{}<Left>", opts)
 keymap("i", "<A-0>", "}", opts)
-keymap("i", "<A-8>", "[", opts)
+keymap("i", "<A-8>", "[]<Left>", opts)
 keymap("i", "<A-9>", "]", opts)
 -- -------------
 -- VISUAL - MODE
