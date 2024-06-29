@@ -34,7 +34,6 @@ keymap("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" } )
 keymap("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" } )
 keymap("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" } )
 keymap("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current window" } )
-keymap("t", "<leader>sx", "<C-\\><C-n><cmd>q<CR>", { desc = "Close current Terminal" } )
 keymap("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new Tab" } )
 keymap("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" } )
 keymap("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" } )
@@ -63,10 +62,12 @@ keymap("i", "<A-9>", "]", opts)
 -- -------------
 -- VISUAL - MODE
 -- -------------
---
+keymap("v", "<tab>", ">gv", { desc = "Text Einrücken" })
+keymap("v", "<S-tab>", "<gv", { desc = "Text Einrücken" })
 -- -------------
 -- TERMINAL - MODE
 -- -------------
 keymap("t", "jk", "<C-\\><C-n>", opts)
 keymap("t", "kj", "<C-\\><C-n>", opts)
+keymap("t", "<leader>sx", "<C-\\><C-n><cmd>q<CR>", { desc = "Close current Terminal" } )
 
